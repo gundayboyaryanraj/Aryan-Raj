@@ -26,17 +26,18 @@ def sp(stri):
         sleep(0.03)
 
 logo =  """\033[1;37;1m     
- _    ______   __ _    _   _   ____      _       _
-   / \  |  _ \ \ / // \  | \ | | |  _ \    / \     | |
-  / _ \ | |_) \ V // _ \ |  \| | | |_) |  / _ \ _  | |
- / ___ \|  _ < | |/ ___ \| |\  | |  _ <  / ___ \ |_| |
-/_/   \_\_| \_\|_/_/   \_\_| \_| |_| \_\/_/   \_\___/
+\033[1;37;1m  oo____oo_oooo__ooooo__oo____oo_oo______oo_
+\033[1;37;1m  oo____oo__oo__oo___oo_oo____oo_oo______oo_
+\033[1;37;1m  oo____oo__oo___oo_____oo____oo_oo______oo_
+\033[1;37;1m  _oo__oo___oo_____oo___oooooooo_oo______oo_
+\033[1;37;1m  __oooo____oo__oo___oo_oo____oo__oo____oo__
+\033[1;37;1m  ___oo____oooo__ooooo__oo____oo____oooo____
 __________________________________________  
 \033[1;37;1m-----------------------------------------------
-\033[1;37;1m  Author   : ARYAN RAJ GUNDAY
-\033[1;37;1m  https://www.facebook.com/profile.php?id=100012049573351
-033[1;37;1m  Virson   : 2022
-\033[1;37;1m whatsapp=+91 7061654673
+\033[1;37;1m  Author   : Aryan Raj Xd
+\033[1;37;1m  Facebook : www.facebook.com/100040365726070
+\033[1;37;1m  Virson   : 2.1.0
+\033[1;37;1m-----------------------------------------------"""
 
 def menu():
 	os.system('clear')
@@ -59,8 +60,8 @@ def menu():
 def login():
     browser.open(url)
     browser.select_form(nr = 0)
-    browser.form['email'] =
-    browser.form['pass'] =
+    browser.form['email'] = USERNAME
+    browser.form['pass'] = PASSWORD
     r = browser.submit()
     f = open("login.html", "wb")
     f.write(r.read())
